@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Quality Assistant — Oralytix</title>
+<title>Image Quality Assistant | Oralytix</title>
 <meta name="description" content="How Oralytix checks exposure, positioning, and cropping before any AI analysis runs, so a poor image is retaken instead of misread.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -411,7 +411,7 @@ h3.display{
 }
 
 /* ============================================================
-   WORKFLOW (real sequence — numbering earned)
+   WORKFLOW (real sequence, numbering earned)
    ============================================================ */
 .workflow{ background: var(--ink); color: #fff; }
 .workflow .section-head h2{ color: #fff; }
@@ -1285,7 +1285,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
           <svg viewBox="0 0 20 20" fill="none"><path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Back to Features
         </a>
-        <span class="eyebrow on-dark">Feature — Quality</span>
+        <span class="eyebrow on-dark">Feature: Quality</span>
         <h1 class="display page-hero-title">Retake before you misread</h1>
         <p class="page-hero-lede">Exposure, positioning, and cropping are checked before analysis runs, so a blurry film gets flagged for a retake instead of confidently misread by a model that shouldn't have been given it in the first place.</p>
       </div>
@@ -1303,7 +1303,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <h2 class="display" style="margin-top:14px;">Garbage in, confident garbage out</h2>
     </div>
     <div class="article-body reveal">
-      <p>Most of the risk in an AI imaging tool doesn't come from the model being wrong on a good image — it comes from the model being confidently wrong on a bad one. An underexposed bitewing, a cropped panoramic missing the apex of a root, a blurred periapical: any of these can produce a finding that looks just as confident as one from a perfect image.</p>
+      <p>Most of the risk in an AI imaging tool doesn't come from the model being wrong on a good image. It comes from the model being confidently wrong on a bad one. An underexposed bitewing, a cropped panoramic missing the apex of a root, a blurred periapical: any of these can produce a finding that looks just as confident as one from a perfect image.</p>
       <p>The quality assistant exists to catch that before it happens. It's the first thing that runs on any uploaded image, and nothing moves to analysis until it passes.</p>
     </div>
   </div>
@@ -1316,11 +1316,11 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <h2 class="display" style="margin-top:14px;">Five things, before anything else runs</h2>
     </div>
     <ol class="step-list reveal">
-      <li><span class="n mono">01</span><div><h4>Exposure</h4><p>Too dark or too light, and fine detail in enamel and bone starts to disappear — exactly where a small lesion would be.</p></div></li>
+      <li><span class="n mono">01</span><div><h4>Exposure</h4><p>Too dark or too light, and fine detail in enamel and bone starts to disappear, exactly where a small lesion would be.</p></div></li>
       <li><span class="n mono">02</span><div><h4>Positioning</h4><p>Checks that the relevant anatomy is actually captured within the frame, not cut off at the edge.</p></div></li>
       <li><span class="n mono">03</span><div><h4>Contrast</h4><p>Low contrast between tooth structure and surrounding tissue makes early findings especially easy to miss, for a model or a person.</p></div></li>
-      <li><span class="n mono">04</span><div><h4>Cropping</h4><p>Confirms the full region of interest is present — a periapical missing the root tip isn't useful for a periapical finding.</p></div></li>
-      <li><span class="n mono">05</span><div><h4>Blur</h4><p>Motion or focus blur is flagged before it can be mistaken for — or mask — an actual finding.</p></div></li>
+      <li><span class="n mono">04</span><div><h4>Cropping</h4><p>Confirms the full region of interest is present, a periapical missing the root tip isn't useful for a periapical finding.</p></div></li>
+      <li><span class="n mono">05</span><div><h4>Blur</h4><p>Motion or focus blur is flagged before it can be mistaken for (or to mask) an actual finding.</p></div></li>
     </ol>
   </div>
 </section>
@@ -1335,7 +1335,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         <span class="eyebrow">What happens next</span>
         <h2 class="display" style="margin: 14px 0 16px; font-size: clamp(1.5rem, 2.6vw, 2rem);">Two outcomes, nothing in between</h2>
         <div class="article-body">
-          <p>An image either passes — <em>"Good, ready for analysis"</em> — and moves on to tooth detection and AI analysis, or it doesn't — <em>"Attention required: image quality may limit reliable interpretation"</em> — and the practice knows to retake it before relying on any AI read.</p>
+          <p>An image either passes, <em>"Good, ready for analysis"</em>, and moves on to tooth detection and AI analysis, or it doesn't, <em>"Attention required: image quality may limit reliable interpretation"</em>, and the practice knows to retake it before relying on any AI read.</p>
           <p>There's no middle state where a marginal image gets analyzed with a quiet asterisk. The check is binary on purpose: a practice shouldn't have to interpret a quality warning to know what to do with it.</p>
         </div>
       </div>
@@ -1352,15 +1352,15 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
     <div class="faq-list reveal">
       <details class="faq-item">
         <summary>Does a failed quality check get logged anywhere?</summary>
-        <div class="faq-a">Yes — it's recorded as part of the image's processing history, useful for a practice tracking whether certain equipment or positioning habits produce more retakes over time.</div>
+        <div class="faq-a">Yes, it's recorded as part of the image's processing history, useful for a practice tracking whether certain equipment or positioning habits produce more retakes over time.</div>
       </details>
       <details class="faq-item">
         <summary>Can the quality threshold be adjusted per practice?</summary>
-        <div class="faq-a">The check is calibrated against what the analysis models need to produce a reliable read, rather than a practice-configurable setting — the goal is a consistent bar, not a variable one.</div>
+        <div class="faq-a">The check is calibrated against what the analysis models need to produce a reliable read, rather than a practice-configurable setting. The goal is a consistent bar, not a variable one.</div>
       </details>
       <details class="faq-item">
         <summary>Does this slow down the workflow?</summary>
-        <div class="faq-a">No — the check runs in the same first-pass window as tooth detection, well within the seconds-not-minutes latency the rest of the pipeline is built around.</div>
+        <div class="faq-a">No. The check runs in the same first-pass window as tooth detection, well within the seconds-not-minutes latency the rest of the pipeline is built around.</div>
       </details>
     </div>
   </div>
@@ -1414,7 +1414,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <div class="footer-col">
         <h5>Contact</h5>
         <ul>
-          <li><a href="mailto:hello@oralytix.ai">hello@oralytix.ai</a></li>
+          <li><a href="mailto:hello@oralytix.site">hello@oralytix.site</a></li>
           <li><a href="tel:+2349137155456">0913 715 5456</a></li>
           <li class="footer-address">Dutse Sokale, Bwari, Abuja</li>
           <li><a href="contact.html">See it on your scans</a></li>
@@ -1435,7 +1435,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
   if(toggle && mobile){
     toggle.addEventListener('click', function(){
       var open = mobile.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-expanded', open ? 'true': 'false');
     });
     mobile.querySelectorAll('a').forEach(function(a){
       a.addEventListener('click', function(){
@@ -1449,7 +1449,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
   var modeButtons = document.querySelectorAll('.mode-toggle button');
   var modePanel = document.getElementById('modePanel');
   var modeText = document.getElementById('modeText');
-  var modeLabel = modePanel ? modePanel.querySelector('.m-label') : null;
+  var modeLabel = modePanel ? modePanel.querySelector('.m-label'): null;
   var copy = {
     clinical: 'Radiolucency, distal surface, tooth 46. Consistent with early-stage carious lesion. Recommend restorative evaluation.',
     patient: 'Your dentist is looking more closely at one area on your lower right molar because it looks a little different from the tooth around it. It\u2019s something worth keeping an eye on at your next visit.'
@@ -1461,7 +1461,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       btn.setAttribute('aria-pressed','true');
       var mode = btn.getAttribute('data-mode');
       modePanel.setAttribute('data-mode', mode);
-      modeLabel.textContent = mode === 'clinical' ? 'Clinical view' : 'Patient view';
+      modeLabel.textContent = mode === 'clinical' ? 'Clinical view': 'Patient view';
       modeText.textContent = copy[mode];
     });
   });

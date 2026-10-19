@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trust &amp; Review — How Oralytix Keeps the Dentist in Control</title>
+<title>Trust &amp; Review | How Oralytix Keeps the Dentist in Control</title>
 <meta name="description" content="How Oralytix's human-in-the-loop review works, how it's positioned against medical-device regulation, and how patient imaging data is handled.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -411,7 +411,7 @@ h3.display{
 }
 
 /* ============================================================
-   WORKFLOW (real sequence — numbering earned)
+   WORKFLOW (real sequence, numbering earned)
    ============================================================ */
 .workflow{ background: var(--ink); color: #fff; }
 .workflow .section-head h2{ color: #fff; }
@@ -1320,7 +1320,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         <span class="eyebrow">The principle</span>
         <h2 class="display" style="margin: 14px 0 16px; font-size: clamp(1.5rem, 2.6vw, 2rem);">AI assists. The dentist decides.</h2>
         <div class="article-body">
-          <p>It would be easy to build a version of this product that quietly optimizes for one number — findings per scan, or time saved per review — and let that number creep into places it shouldn't. Oralytix is built to resist that specifically.</p>
+          <p>It would be easy to build a version of this product that quietly optimizes for one number (findings per scan, or time saved per review) and let that number creep into places it shouldn't. Oralytix is built to resist that specifically.</p>
           <p>Every finding the model produces is labeled as a candidate for review, never a diagnosis. Every candidate carries a visible confidence score instead of a flat "detected" label, so a 52% finding reads differently than a 96% one. And structurally, nothing written by the model reaches the patient record without passing through a dentist's confirm, dismiss, or modify decision first.</p>
         </div>
       </div>
@@ -1338,8 +1338,8 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <h2 class="display" style="margin-top:14px;">Three places the principle actually gets enforced</h2>
     </div>
     <ol class="step-list reveal">
-      <li><span class="n mono">01</span><div><h4>The review queue</h4><p>Every AI finding sits in a queue of exactly three actions — confirm, dismiss, modify. There is no fourth option that lets a finding pass through unreviewed, and no setting that turns this off.</p></div></li>
-      <li><span class="n mono">02</span><div><h4>Confidence, always visible</h4><p>A finding's model-confidence score sits next to it everywhere it appears — in the review panel, in the findings summary, and in the audit record — rather than being available only if someone digs for it.</p></div></li>
+      <li><span class="n mono">01</span><div><h4>The review queue</h4><p>Every AI finding sits in a queue of exactly three actions: confirm, dismiss, modify. There is no fourth option that lets a finding pass through unreviewed, and no setting that turns this off.</p></div></li>
+      <li><span class="n mono">02</span><div><h4>Confidence, always visible</h4><p>A finding's model-confidence score sits next to it everywhere it appears, in the review panel, in the findings summary, and in the audit record, rather than being available only if someone digs for it.</p></div></li>
       <li><span class="n mono">03</span><div><h4>The audit trail</h4><p>Every confirm, dismiss, and modify action is logged with a timestamp, stored separately from clinical content. If a finding is ever questioned, there's a record of exactly who made the call and when.</p></div></li>
     </ol>
   </div>
@@ -1355,7 +1355,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         <span class="eyebrow">Patient trust</span>
         <h2 class="display" style="margin: 14px 0 16px; font-size: clamp(1.5rem, 2.6vw, 2rem);">The same care extends to how patients see it</h2>
         <div class="article-body">
-          <p>Patient mode exists for the same reason the review queue does: nothing gets presented to a patient without the dentist choosing what's shown and how. A finding described in clinical language for the chart is never shown to a patient verbatim — it's translated into plain terms the dentist can review before the conversation happens, not generated live in front of the patient.</p>
+          <p>Patient mode exists for the same reason the review queue does: nothing gets presented to a patient without the dentist choosing what's shown and how. A finding described in clinical language for the chart is never shown to a patient verbatim. It's translated into plain terms the dentist can review before the conversation happens, not generated live in front of the patient.</p>
         </div>
       </div>
     </div>
@@ -1369,12 +1369,12 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <h2 class="display" style="margin-top:14px;">How this is classified, in plain terms</h2>
     </div>
     <div class="article-body reveal">
-      <p>Software that analyzes radiological images falls within a medical-device category in the United States, and a number of AI-assisted dental imaging tools — including ones that return visual findings like bounding boxes or segmentation outlines — are already in clinical use under that framework. This isn't a footnote; it shapes how the product is built.</p>
+      <p>Software that analyzes radiological images falls within a medical-device category in the United States, and a number of AI-assisted dental imaging tools, including ones that return visual findings like bounding boxes or segmentation outlines, are already in clinical use under that framework. This isn't a footnote; it shapes how the product is built.</p>
       <p>Oralytix is designed around that reality rather than around it. Findings are presented as candidates for review, not as diagnoses. The product doesn't claim diagnostic authority anywhere in its interface or its documentation, and every finding requires a dentist's decision before it becomes part of the record. Practices evaluating Oralytix for their own compliance review should treat this page as a starting point for that conversation, not a substitute for it.</p>
     </div>
     <div class="callout-box amber reveal">
       <span class="k">Worth asking us directly</span>
-      <p>If your practice has specific compliance or procurement questions — data residency, BAA requirements, or how findings are logged for audit — bring them to a walkthrough. These are exactly the questions a 20-minute call should answer.</p>
+      <p>If your practice has specific compliance or procurement questions, data residency, BAA requirements, or how findings are logged for audit, bring them to a walkthrough. These are exactly the questions a 20-minute call should answer.</p>
     </div>
   </div>
 </section>
@@ -1389,7 +1389,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         <span class="eyebrow">Data handling</span>
         <h2 class="display" style="margin: 14px 0 16px; font-size: clamp(1.5rem, 2.6vw, 2rem);">Where images go, and who can see them</h2>
         <div class="article-body">
-          <p>Radiographs and intraoral photos are stored encrypted, separate from the operational metadata that tracks model versions and audit records — so a breach of one system doesn't automatically expose the other. Nothing about a patient's imaging history is used to train models for other practices without a separate, explicit agreement; the infrastructure section covers the technical side of this in more detail.</p>
+          <p>Radiographs and intraoral photos are stored encrypted, separate from the operational metadata that tracks model versions and audit records, so a breach of one system doesn't automatically expose the other. Nothing about a patient's imaging history is used to train models for other practices without a separate, explicit agreement; the infrastructure section covers the technical side of this in more detail.</p>
         </div>
         <a class="btn btn-ghost" href="index.html#infrastructure" style="margin-top:8px;">See the infrastructure
           <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -1408,11 +1408,11 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
     <div class="faq-list reveal">
       <details class="faq-item">
         <summary>Is Oralytix FDA cleared?</summary>
-        <div class="faq-a">Oralytix is built around the same regulatory category that governs AI-assisted radiological image analysis, and the product is designed from the ground up to support that review — but specific clearance status is a conversation for procurement, not a marketing claim. Ask us directly on a walkthrough.</div>
+        <div class="faq-a">Oralytix is built around the same regulatory category that governs AI-assisted radiological image analysis, and the product is designed from the ground up to support that review, but specific clearance status is a conversation for procurement, not a marketing claim. Ask us directly on a walkthrough.</div>
       </details>
       <details class="faq-item">
         <summary>Can a dentist override or turn off a finding entirely?</summary>
-        <div class="faq-a">Yes — dismiss is one of the three review actions, available on every single finding, every time. There's no bulk "accept all" that skips individual review.</div>
+        <div class="faq-a">Yes, dismiss is one of the three review actions, available on every single finding, every time. There's no bulk "accept all" that skips individual review.</div>
       </details>
       <details class="faq-item">
         <summary>Who can see the audit trail?</summary>
@@ -1431,13 +1431,13 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
     <div class="article-head reveal">
       <span class="eyebrow">Corporate &amp; legal</span>
       <h2 class="display">The compliance basics, in one place</h2>
-      <p class="lede">Product trust is covered above. This is the corporate layer — the policies, security practices, and registration details procurement teams ask for.</p>
+      <p class="lede">Product trust is covered above. This is the corporate layer. The policies, security practices, and registration details procurement teams ask for.</p>
     </div>
 
     <div class="legal-grid reveal">
       <div class="legal-card">
         <h4>Data protection</h4>
-        <p>Radiographs and intraoral images are encrypted in transit and at rest. Operational metadata — tooth-numbering schemas, model versions, audit records — is stored separately from clinical images, as described on the <a href="index.html#infrastructure">infrastructure</a> section.</p>
+        <p>Radiographs and intraoral images are encrypted in transit and at rest. Operational metadata (tooth-numbering schemas, model versions, audit records) is stored separately from clinical images, as described on the <a href="index.html#infrastructure">infrastructure</a> section.</p>
       </div>
       <div class="legal-card">
         <h4>Security practices</h4>
@@ -1504,7 +1504,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <div class="footer-col">
         <h5>Contact</h5>
         <ul>
-          <li><a href="mailto:hello@oralytix.ai">hello@oralytix.ai</a></li>
+          <li><a href="mailto:hello@oralytix.site">hello@oralytix.site</a></li>
           <li><a href="tel:+2349137155456">0913 715 5456</a></li>
           <li class="footer-address">Dutse Sokale, Bwari, Abuja</li>
           <li><a href="contact.html">See it on your scans</a></li>
@@ -1525,7 +1525,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
   if(toggle && mobile){
     toggle.addEventListener('click', function(){
       var open = mobile.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-expanded', open ? 'true': 'false');
     });
     mobile.querySelectorAll('a').forEach(function(a){
       a.addEventListener('click', function(){
@@ -1539,7 +1539,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
   var modeButtons = document.querySelectorAll('.mode-toggle button');
   var modePanel = document.getElementById('modePanel');
   var modeText = document.getElementById('modeText');
-  var modeLabel = modePanel ? modePanel.querySelector('.m-label') : null;
+  var modeLabel = modePanel ? modePanel.querySelector('.m-label'): null;
   var copy = {
     clinical: 'Radiolucency, distal surface, tooth 46. Consistent with early-stage carious lesion. Recommend restorative evaluation.',
     patient: 'Your dentist is looking more closely at one area on your lower right molar because it looks a little different from the tooth around it. It\u2019s something worth keeping an eye on at your next visit.'
@@ -1551,7 +1551,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       btn.setAttribute('aria-pressed','true');
       var mode = btn.getAttribute('data-mode');
       modePanel.setAttribute('data-mode', mode);
-      modeLabel.textContent = mode === 'clinical' ? 'Clinical view' : 'Patient view';
+      modeLabel.textContent = mode === 'clinical' ? 'Clinical view': 'Patient view';
       modeText.textContent = copy[mode];
     });
   });

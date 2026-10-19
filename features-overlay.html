@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Interactive Image Overlay — Oralytix</title>
+<title>Interactive Image Overlay | Oralytix</title>
 <meta name="description" content="How Oralytix draws AI findings directly on the radiograph, with tooth number, description, and confidence in one click-through panel.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -411,7 +411,7 @@ h3.display{
 }
 
 /* ============================================================
-   WORKFLOW (real sequence — numbering earned)
+   WORKFLOW (real sequence, numbering earned)
    ============================================================ */
 .workflow{ background: var(--ink); color: #fff; }
 .workflow .section-head h2{ color: #fff; }
@@ -1285,7 +1285,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
           <svg viewBox="0 0 20 20" fill="none"><path d="M12 4l-6 6 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Back to Features
         </a>
-        <span class="eyebrow on-dark">Feature — Review</span>
+        <span class="eyebrow on-dark">Feature: Review</span>
         <h1 class="display page-hero-title">Where a finding actually lives: on the image</h1>
         <p class="page-hero-lede">Instead of a text line reading "possible caries, lower right," the region itself is outlined on the radiograph. Click it, and a panel opens with the tooth number, the finding, and the model's confidence.</p>
       </div>
@@ -1303,7 +1303,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <h2 class="display" style="margin-top:14px;">Reports get read once. Images get looked at again and again</h2>
     </div>
     <div class="article-body reveal">
-      <p>Most AI imaging tools produce a report: a list of findings, maybe a confidence score, disconnected from the image itself. The dentist reads it once, then goes back to looking at the actual film to verify anything that matters — which means the report and the image are two separate objects competing for attention.</p>
+      <p>Most AI imaging tools produce a report: a list of findings, maybe a confidence score, disconnected from the image itself. The dentist reads it once, then goes back to looking at the actual film to verify anything that matters, which means the report and the image are two separate objects competing for attention.</p>
       <p>Oralytix skips the report entirely. Findings are drawn as highlighted regions directly on the radiograph the dentist is already looking at. There's nothing to cross-reference, because the finding and the image are the same view.</p>
     </div>
   </div>
@@ -1323,7 +1323,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         </div>
         <div class="example-panel">
           <span class="ex-label">Sample finding</span>
-          <div class="ex-name">Tooth 26 — existing restoration</div>
+          <div class="ex-name">Tooth 26, existing restoration</div>
           <div class="ex-desc">Consistent radiopacity matching a prior restoration on file. No action suggested.</div>
           <span class="ex-conf">96% <span class="ex-conf-cap">model confidence</span></span>
         </div>
@@ -1340,12 +1340,12 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
     </div>
     <ol class="step-list reveal">
       <li><span class="n mono">01</span><div><h4>Click-through, not scroll-through</h4><p>The dentist inspects flagged regions directly instead of scanning the whole image from scratch, tooth by tooth.</p></div></li>
-      <li><span class="n mono">02</span><div><h4>Confidence shown plainly</h4><p>Every finding carries a model-confidence figure, so a 52% candidate reads differently than a 96% one — never a flat "detected" label that hides the difference.</p></div></li>
+      <li><span class="n mono">02</span><div><h4>Confidence shown plainly</h4><p>Every finding carries a model-confidence figure, so a 52% candidate reads differently than a 96% one, never a flat "detected" label that hides the difference.</p></div></li>
       <li><span class="n mono">03</span><div><h4>Explainable by design</h4><p>Because a finding is anchored to a visible region, it's easy to check against the actual image, not just take on faith. If the highlight doesn't match what's there, that's immediately obvious.</p></div></li>
     </ol>
     <div class="callout-box reveal">
       <span class="k">Where this leads</span>
-      <p>Every overlay finding flows straight into <a href="features-approval.html" style="color:var(--blue); font-weight:600;">dentist review and approval</a> — the click-through view is how a finding gets inspected before it's confirmed, dismissed, or modified.</p>
+      <p>Every overlay finding flows straight into <a href="features-approval.html" style="color:var(--blue); font-weight:600;">dentist review and approval</a>. The click-through view is how a finding gets inspected before it's confirmed, dismissed, or modified.</p>
     </div>
   </div>
 </section>
@@ -1359,15 +1359,15 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
     <div class="faq-list reveal">
       <details class="faq-item">
         <summary>Does the overlay work on panoramic, bitewing, and periapical images?</summary>
-        <div class="faq-a">Yes — the same overlay and review panel pattern applies across all supported image types. The underlying detection differs by modality; the interaction doesn't.</div>
+        <div class="faq-a">Yes, the same overlay and review panel pattern applies across all supported image types. The underlying detection differs by modality; the interaction doesn't.</div>
       </details>
       <details class="faq-item">
         <summary>Can more than one finding be highlighted on the same image?</summary>
-        <div class="faq-a">Yes. A single scan can carry multiple flagged regions, each independently reviewable — a full-mouth series commonly returns several.</div>
+        <div class="faq-a">Yes. A single scan can carry multiple flagged regions, each independently reviewable, a full-mouth series commonly returns several.</div>
       </details>
       <details class="faq-item">
         <summary>What happens to a region that isn't flagged?</summary>
-        <div class="faq-a">Nothing — the absence of a highlight isn't itself a finding. The overlay marks candidates worth a closer look; it doesn't certify the rest of the image as clear.</div>
+        <div class="faq-a">Nothing. The absence of a highlight isn't itself a finding. The overlay marks candidates worth a closer look; it doesn't certify the rest of the image as clear.</div>
       </details>
     </div>
   </div>
@@ -1421,7 +1421,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <div class="footer-col">
         <h5>Contact</h5>
         <ul>
-          <li><a href="mailto:hello@oralytix.ai">hello@oralytix.ai</a></li>
+          <li><a href="mailto:hello@oralytix.site">hello@oralytix.site</a></li>
           <li><a href="tel:+2349137155456">0913 715 5456</a></li>
           <li class="footer-address">Dutse Sokale, Bwari, Abuja</li>
           <li><a href="contact.html">See it on your scans</a></li>
@@ -1442,7 +1442,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
   if(toggle && mobile){
     toggle.addEventListener('click', function(){
       var open = mobile.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-expanded', open ? 'true': 'false');
     });
     mobile.querySelectorAll('a').forEach(function(a){
       a.addEventListener('click', function(){
@@ -1456,7 +1456,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
   var modeButtons = document.querySelectorAll('.mode-toggle button');
   var modePanel = document.getElementById('modePanel');
   var modeText = document.getElementById('modeText');
-  var modeLabel = modePanel ? modePanel.querySelector('.m-label') : null;
+  var modeLabel = modePanel ? modePanel.querySelector('.m-label'): null;
   var copy = {
     clinical: 'Radiolucency, distal surface, tooth 46. Consistent with early-stage carious lesion. Recommend restorative evaluation.',
     patient: 'Your dentist is looking more closely at one area on your lower right molar because it looks a little different from the tooth around it. It\u2019s something worth keeping an eye on at your next visit.'
@@ -1468,7 +1468,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       btn.setAttribute('aria-pressed','true');
       var mode = btn.getAttribute('data-mode');
       modePanel.setAttribute('data-mode', mode);
-      modeLabel.textContent = mode === 'clinical' ? 'Clinical view' : 'Patient view';
+      modeLabel.textContent = mode === 'clinical' ? 'Clinical view': 'Patient view';
       modeText.textContent = copy[mode];
     });
   });

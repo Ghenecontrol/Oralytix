@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How Oralytix Works — From Upload to Chart Note</title>
+<title>How Oralytix Works | From Upload to Chart Note</title>
 <meta name="description" content="A detailed look at how Oralytix moves a radiograph from upload through AI analysis to a dentist-reviewed chart note, step by step.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -411,7 +411,7 @@ h3.display{
 }
 
 /* ============================================================
-   WORKFLOW (real sequence — numbering earned)
+   WORKFLOW (real sequence, numbering earned)
    ============================================================ */
 .workflow{ background: var(--ink); color: #fff; }
 .workflow .section-head h2{ color: #fff; }
@@ -1287,7 +1287,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         </a>
         <span class="eyebrow on-dark">How it works</span>
         <h1 class="display page-hero-title">The path a scan takes, and the rule that never changes</h1>
-        <p class="page-hero-lede">This is the literal path a radiograph takes through Oralytix, from the moment it lands in storage to the moment a finding is written into the chart. Every stage either checks the image or hands a decision back to the dentist — nothing in between.</p>
+        <p class="page-hero-lede">This is the literal path a radiograph takes through Oralytix, from the moment it lands in storage to the moment a finding is written into the chart. Every stage either checks the image or hands a decision back to the dentist. Nothing in between.</p>
       </div>
     </div>
   </div>
@@ -1303,7 +1303,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         <span class="eyebrow">Before analysis</span>
         <h2 class="display" style="margin: 14px 0 16px; font-size: clamp(1.5rem, 2.6vw, 2rem);">Getting the image right, before anything reads it</h2>
         <div class="article-body">
-          <p>Every scan that reaches Oralytix passes through two checks before the AI forms any opinion about it. First, an image quality assessment looks at exposure, positioning, cropping, and blur — the same things a dentist would notice if a bitewing came back slightly off. If something's wrong, the image is flagged for a retake instead of being confidently misread.</p>
+          <p>Every scan that reaches Oralytix passes through two checks before the AI forms any opinion about it. First, an image quality assessment looks at exposure, positioning, cropping, and blur. The same things a dentist would notice if a bitewing came back slightly off. If something's wrong, the image is flagged for a retake instead of being confidently misread.</p>
           <p>Second, automatic tooth detection identifies and numbers every visible tooth. This sounds minor, but it's what makes everything downstream possible: a finding, a note, or a historical comparison is only useful if it's attached to a specific tooth, not a vague region of an image.</p>
         </div>
         <div class="callout-box">
@@ -1325,12 +1325,12 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         <span class="eyebrow">The read</span>
         <h2 class="display" style="margin: 14px 0 16px; font-size: clamp(1.5rem, 2.6vw, 2rem);">What the model actually looks for</h2>
         <div class="article-body">
-          <p>With a quality-checked, tooth-numbered image, the AI analysis stage runs a first pass across the full scan looking for candidate findings — caries, existing restorations, periapical changes. It isn't asked to catalog everything; it's asked to shortlist what's worth a second look.</p>
+          <p>With a quality-checked, tooth-numbered image, the AI analysis stage runs a first pass across the full scan looking for candidate findings, caries, existing restorations, periapical changes. It isn't asked to catalog everything; it's asked to shortlist what's worth a second look.</p>
           <p>Every candidate is drawn directly onto the image as a highlighted region, not written up as a separate line item in a report. Click a highlighted area, and a panel opens with the tooth number, a plain description of the finding, and the model's confidence.</p>
         </div>
         <div class="example-panel">
           <span class="ex-label">Sample finding</span>
-          <div class="ex-name">Tooth 16 — possible carious lesion</div>
+          <div class="ex-name">Tooth 16: possible carious lesion</div>
           <div class="ex-desc">Localized radiolucency on the mesial surface. Recommend visual and tactile exam to confirm.</div>
           <span class="ex-conf">87% <span class="ex-conf-cap">model confidence</span></span>
         </div>
@@ -1349,8 +1349,8 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         <span class="eyebrow">Context</span>
         <h2 class="display" style="margin: 14px 0 16px; font-size: clamp(1.5rem, 2.6vw, 2rem);">What changed since the last visit</h2>
         <div class="article-body">
-          <p>If the patient has prior studies on file, Oralytix aligns them with the current image automatically — no manually flipping between two windows. The system looks for regions that appear different between studies and marks them for review, the same way a dentist would notice a shadow that wasn't there two years ago.</p>
-          <p>A note like <em>"potential change, region of tooth 36"</em> points to exactly where to look. The comparison itself never makes the call on what changed and why — that stays with the dentist, who can pull up side-by-side, overlay, or difference views to check it directly.</p>
+          <p>If the patient has prior studies on file, Oralytix aligns them with the current image automatically, no manually flipping between two windows. The system looks for regions that appear different between studies and marks them for review, the same way a dentist would notice a shadow that wasn't there two years ago.</p>
+          <p>A note like <em>"potential change, region of tooth 36"</em> points to exactly where to look. The comparison itself never makes the call on what changed and why. That stays with the dentist, who can pull up side-by-side, overlay, or difference views to check it directly.</p>
         </div>
       </div>
     </div>
@@ -1371,8 +1371,8 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
         </div>
         <ol class="step-list">
           <li><span class="n mono">Confirm</span><div><h4>The finding stands</h4><p>It's written into the chart as a confirmed finding, in the dentist's own phrasing where relevant.</p></div></li>
-          <li><span class="n mono">Dismiss</span><div><h4>Not clinically relevant</h4><p>The candidate is logged and cleared — it never reaches the patient record as a finding.</p></div></li>
-          <li><span class="n mono">Modify</span><div><h4>Close, but not quite right</h4><p>The dentist edits the finding before it's saved — for example, correcting "possible caries" to "existing restoration."</p></div></li>
+          <li><span class="n mono">Dismiss</span><div><h4>Not clinically relevant</h4><p>The candidate is logged and cleared. It never reaches the patient record as a finding.</p></div></li>
+          <li><span class="n mono">Modify</span><div><h4>Close, but not quite right</h4><p>The dentist edits the finding before it's saved, for example correcting "possible caries" to "existing restoration."</p></div></li>
         </ol>
       </div>
     </div>
@@ -1386,12 +1386,12 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <h2 class="display" style="margin-top:14px;">Documentation and history update themselves</h2>
     </div>
     <div class="article-body reveal">
-      <p>Once a finding is confirmed, Oralytix drafts a structured chart entry from it — turning a quick note like <em>"46 looks suspicious, compare with previous X-ray"</em> into a complete entry the dentist edits before saving: <em>"Tooth 46 demonstrates an area requiring clinical review; comparison with the previous radiograph is recommended."</em> Three dentists with three different shorthands end up with consistent-looking charts.</p>
-      <p>At the same time, the patient's imaging timeline updates automatically. The next time this patient comes in, whoever opens the chart starts with full context already assembled — not a folder of loose images to sort through again.</p>
+      <p>Once a finding is confirmed, Oralytix drafts a structured chart entry from it, turning a quick note like <em>"46 looks suspicious, compare with previous X-ray"</em> into a complete entry the dentist edits before saving: <em>"Tooth 46 demonstrates an area requiring clinical review; comparison with the previous radiograph is recommended."</em> Three dentists with three different shorthands end up with consistent-looking charts.</p>
+      <p>At the same time, the patient's imaging timeline updates automatically. The next time this patient comes in, whoever opens the chart starts with full context already assembled, not a folder of loose images to sort through again.</p>
     </div>
     <div class="callout-box blue reveal">
       <span class="k">The rule that doesn't move</span>
-      <p><strong>AI assists. Dentist decides.</strong> Nowhere in these nine steps does a finding reach the patient chart without a human decision attached to it. That's not a policy layered on top of the product — it's steps 7 and 8 of the pipeline itself.</p>
+      <p><strong>AI assists. Dentist decides.</strong> Nowhere in these nine steps does a finding reach the patient chart without a human decision attached to it. That's not a policy layered on top of the product. It's steps 7 and 8 of the pipeline itself.</p>
     </div>
   </div>
 </section>
@@ -1405,11 +1405,11 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
     <div class="faq-list reveal">
       <details class="faq-item">
         <summary>How long does a first-pass review actually take?</summary>
-        <div class="faq-a">Analysis typically returns in seconds once an image is uploaded — the design goal throughout the pipeline is to keep the model out of the way of chairside time, not add a waiting room.</div>
+        <div class="faq-a">Analysis typically returns in seconds once an image is uploaded. The design goal throughout the pipeline is to keep the model out of the way of chairside time, not add a waiting room.</div>
       </details>
       <details class="faq-item">
         <summary>What happens if the image quality check fails?</summary>
-        <div class="faq-a">The image is flagged before any analysis runs, with a note on what to fix — exposure, positioning, or cropping. It's re-taken like any other unusable film; the AI never analyzes an image it's flagged as unreliable.</div>
+        <div class="faq-a">The image is flagged before any analysis runs, with a note on what to fix: exposure, positioning, or cropping. It's re-taken like any other unusable film; the AI never analyzes an image it's flagged as unreliable.</div>
       </details>
       <details class="faq-item">
         <summary>Does Oralytix ever alter the original image?</summary>
@@ -1417,7 +1417,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       </details>
       <details class="faq-item">
         <summary>Can a dentist skip the review step?</summary>
-        <div class="faq-a">No — this is enforced by design, not left as a setting. A finding cannot be written to the chart without passing through confirm, dismiss, or modify.</div>
+        <div class="faq-a">No. This is enforced by design, not left as a setting. A finding cannot be written to the chart without passing through confirm, dismiss, or modify.</div>
       </details>
     </div>
   </div>
@@ -1472,7 +1472,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       <div class="footer-col">
         <h5>Contact</h5>
         <ul>
-          <li><a href="mailto:hello@oralytix.ai">hello@oralytix.ai</a></li>
+          <li><a href="mailto:hello@oralytix.site">hello@oralytix.site</a></li>
           <li><a href="tel:+2349137155456">0913 715 5456</a></li>
           <li class="footer-address">Dutse Sokale, Bwari, Abuja</li>
           <li><a href="contact.html">See it on your scans</a></li>
@@ -1493,7 +1493,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
   if(toggle && mobile){
     toggle.addEventListener('click', function(){
       var open = mobile.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-expanded', open ? 'true': 'false');
     });
     mobile.querySelectorAll('a').forEach(function(a){
       a.addEventListener('click', function(){
@@ -1507,7 +1507,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
   var modeButtons = document.querySelectorAll('.mode-toggle button');
   var modePanel = document.getElementById('modePanel');
   var modeText = document.getElementById('modeText');
-  var modeLabel = modePanel ? modePanel.querySelector('.m-label') : null;
+  var modeLabel = modePanel ? modePanel.querySelector('.m-label'): null;
   var copy = {
     clinical: 'Radiolucency, distal surface, tooth 46. Consistent with early-stage carious lesion. Recommend restorative evaluation.',
     patient: 'Your dentist is looking more closely at one area on your lower right molar because it looks a little different from the tooth around it. It\u2019s something worth keeping an eye on at your next visit.'
@@ -1519,7 +1519,7 @@ footer{ background: var(--ink); color: rgba(255,255,255,0.65); padding: 56px 0 2
       btn.setAttribute('aria-pressed','true');
       var mode = btn.getAttribute('data-mode');
       modePanel.setAttribute('data-mode', mode);
-      modeLabel.textContent = mode === 'clinical' ? 'Clinical view' : 'Patient view';
+      modeLabel.textContent = mode === 'clinical' ? 'Clinical view': 'Patient view';
       modeText.textContent = copy[mode];
     });
   });
